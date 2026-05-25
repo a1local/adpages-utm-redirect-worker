@@ -1,0 +1,11 @@
+### Health check
+GET http://localhost:8787/health
+
+### Inspect redirect target without redirecting
+GET http://localhost:8787/audit?utm_term=landing%20page&dry_run=1
+
+### Follow a configured campaign redirect
+GET http://localhost:8787/google-ads-checklist
+
+### Unknown short path returns JSON 404
+GET http://localhost:8787/not-configured

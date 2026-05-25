@@ -1,0 +1,24 @@
+{
+  "name": "adpages-utm-redirect-worker-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Workers starter for campaign short links that append and normalize UTM parameters.",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "utm",
+    "campaigns",
+    "redirects",
+    "marketing-tools"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "wrangler": "^4.0.0"
+  }
+}

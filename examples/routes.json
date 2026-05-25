@@ -1,0 +1,27 @@
+{
+  "/audit": {
+    "destination": "https://www.example.com/free-website-audit",
+    "utm": {
+      "utm_campaign": "website_audit"
+    },
+    "allowedPassthroughParams": ["utm_term", "utm_content"]
+  },
+  "/proposal": {
+    "destination": "https://www.example.com/proposal-template",
+    "utm": {
+      "utm_source": "linkedin",
+      "utm_medium": "organic",
+      "utm_campaign": "proposal_template"
+    },
+    "status": 302
+  },
+  "/qr-checklist": {
+    "destination": "https://www.example.com/checklists/google-ads",
+    "utm": {
+      "utm_source": "qr",
+      "utm_medium": "offline",
+      "utm_campaign": "google_ads_checklist"
+    },
+    "allowedPassthroughParams": ["utm_content"]
+  }
+}
