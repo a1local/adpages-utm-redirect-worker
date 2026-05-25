@@ -1,0 +1,29 @@
+name = "adpages-utm-redirect-worker"
+main = "src/index.ts"
+compatibility_date = "2026-05-01"
+workers_dev = true
+preview_urls = true
+
+[vars]
+DEFAULT_UTM_SOURCE = "shortlink"
+DEFAULT_UTM_MEDIUM = "redirect"
+ROUTES_JSON = '''
+{
+  "/audit": {
+    "destination": "https://www.example.com/free-website-audit",
+    "utm": {
+      "utm_campaign": "website_audit"
+    },
+    "allowedPassthroughParams": ["utm_term", "utm_content"]
+  },
+  "/google-ads-checklist": {
+    "destination": "https://www.example.com/resources/google-ads-checklist?download=1",
+    "utm": {
+      "utm_campaign": "google_ads_checklist",
+      "utm_source": "qr",
+      "utm_medium": "offline"
+    },
+    "status": 302
+  }
+}
+'''
